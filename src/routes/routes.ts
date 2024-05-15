@@ -1,5 +1,6 @@
-import { RegisterPage } from "../forms/pages/RegisterPage";
+
 import { HomePage } from "../initialView/pages/HomePage";
+import { FormikAbstraction, FormikBasicPage, FormikComponents, FormikYupPage, RegisterPage } from "../forms/pages";
 
 interface Route {
     to: string
@@ -20,5 +21,29 @@ export const routes: Route[] = [
         path: 'register',
         Component: RegisterPage,
         name: 'Register'
-    }
+    },
+    {
+        to: '/formikbasic',
+        path: 'formikbasic',
+        Component: FormikBasicPage,
+        name: 'Formik basic'
+    },
+    {
+        to: '/formikyup',
+        path: 'formikyup',
+        Component: FormikYupPage,
+        name: 'Formik Yup'
+    },
+    {
+        to: '/formik-components',
+        path: 'formik-components',
+        Component: FormikComponents,
+        name: 'Formik Components'
+    },
+    {
+        to: '/formik-adstraction',
+        path: 'formik-adstraction',
+        Component: FormikAbstraction,
+        name: 'Formik Adstraction'
+    },
 ]
