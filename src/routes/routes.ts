@@ -1,6 +1,7 @@
 
 import { HomePage } from "../initialView/pages/HomePage";
-import { FormikAbstraction, FormikBasicPage, FormikComponents, FormikYupPage, RegisterPage } from "../forms/pages";
+import { DynamicForm, FormikAbstraction, FormikBasicPage, FormikComponents, FormikYupPage, RegisterFormikPage, RegisterPage } from "../forms/pages";
+
 
 interface Route {
     to: string
@@ -45,5 +46,17 @@ export const routes: Route[] = [
         path: 'formik-adstraction',
         Component: FormikAbstraction,
         name: 'Formik Adstraction'
+    },
+    {
+        to: '/register-formikpage',
+        path: 'register-formikpage',
+        Component: RegisterFormikPage,
+        name: 'Register Formik Page'
+    },
+    {
+        to: '/dynamic-form',
+        path: 'dynamic-form',
+        Component: DynamicForm,
+        name: 'Dynamic Form'
     },
 ]
